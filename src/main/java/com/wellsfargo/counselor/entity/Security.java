@@ -19,7 +19,7 @@ public class Security {
     @Column(nullable = false)
     private long securityQuantity;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name="portfolio_id")
     private Portfolio portfolio;
 

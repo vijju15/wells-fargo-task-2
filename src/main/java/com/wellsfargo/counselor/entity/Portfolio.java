@@ -12,7 +12,7 @@ public class Portfolio {
     private Date portfolioCreationDate;
 
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "client_id")
     private Client client;
 
